@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    flex-direction:column ;
+    gap: 3rem;
+    margin-top: 6rem;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(1deg, rgba(166, 234, 237, 0.85) 0%, rgba(43, 212, 212, 0) 14rem); ;
+}
+.container>span{
+    color: var(--themeRed);
+    font-weight: bold;
+}
+
+.box{
+    width: 90%;
+    display: flex;
+    gap: 5rem;
+}
+.logo{
+  display: flex;
+  justify-content: center; 
+  justify-items: center; 
+  gap: 0.5rem;
+
+}
+.logo>span{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.social{
+    width: 45%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center; 
+
+
+}
+.social>*{
+    fill: var(--themeRed);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    color: var(--themeRed);
+    padding: 1rem;
+}
