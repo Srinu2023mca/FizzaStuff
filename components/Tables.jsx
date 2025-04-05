@@ -15,6 +15,7 @@ export default function Tables() {
     const [selectedTable, setSelectedTable] = useState(null);
     const addTable = useStore((state) => state.addTable);
     const cartTables = useStore((state) => state.cart.tables || []);
+    console.log(cartTables)
 
     const handleChange = (e) => {
         const value = e.target.value;
@@ -25,8 +26,8 @@ export default function Tables() {
     return (
         <div className={css.container}>
             <div className={css.heading}>
-                <span>AVAILABLE TABLES</span>
-                <span>Select a Table</span>
+                <div>AVAILABLE TABLES</div>
+                <div>Select a Table</div>
             </div>
 
             <div className={css.tableGrid}>
@@ -49,7 +50,7 @@ export default function Tables() {
                                         name="table"
                                         value={table.number}
                                         onChange={handleChange}
-                                        checked={selectedTable === String(table.number)}
+                                        checked={cartTables === String(table.number)}
                                     />
                                     Select Table {table.number}
                                 </label>

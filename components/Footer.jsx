@@ -37,7 +37,7 @@ export default function Footer() {
 
             {/* Logo Section */}
             <div className={css.logo}>
-                <Image src={Logo} alt="FizzaStuff Logo" width={50} height={50} />
+                <Image src={Logo} alt="FizzaStuff Logo" width={32} height={32} />
                 <span>FizzaStuff</span>
             </div>
         </div>

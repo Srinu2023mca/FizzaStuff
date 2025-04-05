@@ -76,7 +76,7 @@
         gap: 3rem;
         align-items: center;
         justify-content: center;
-        background-color: red;
+        
     }
     .feature{
         display: flex;
@@ -130,7 +130,7 @@
         gap: 3rem;
         align-items: center;
         justify-content: center;
-        background-color: blue;
+        
     }
     .feature{
         display: flex;

@@ -22,7 +22,7 @@ export default function Header() {
             {/* logo side */}
             <Link href='../'>
             <div className={css.logo}>
-                <Image src={Logo} alt='' width={50} height={50}/>
+                <Image src={Logo} alt='' width={32} height={32} className="Logo"/>
                 <span>FizzaStuff</span>
             
             </div>

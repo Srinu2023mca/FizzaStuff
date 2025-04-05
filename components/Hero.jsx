@@ -27,7 +27,7 @@ export default function Hero() {
                     Our Mission is to filling Your Tummy with delicious Food and With fast and free delivery
                 </span>
 
-                <button className={'btn ${css.btn}'}>Get Started</button>
+                {/* <button className={'btn ${css.btn}'}>Get Started</button> */}
             </div>
 
             {/* right side */}

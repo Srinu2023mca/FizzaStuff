@@ -122,10 +122,11 @@
 
     .logo > span {
         font-size: 1rem;
+        
     }
 
     .social {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 0.5rem;
     }
 
