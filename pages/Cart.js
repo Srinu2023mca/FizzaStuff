@@ -9,6 +9,7 @@ import OrderModal from "../components/OrderModal";
 import { useRouter } from "next/router";
 import Tables from "../components/Tables";
 
+
 export default function Cart() {
   const CartData = useStore((state) => state.cart);
   const selectedTable = CartData?.tables;

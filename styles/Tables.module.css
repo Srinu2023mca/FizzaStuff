@@ -83,6 +83,11 @@
     color: red;
     font-weight: bold;
 }
+.reservedText{
+    font-size: 14px;
+    color: rgb(255, 234, 6);
+    font-weight: bold;
+}
 
 .selectionMessage {
     margin-top: 1.5rem;

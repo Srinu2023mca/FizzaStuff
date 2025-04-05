@@ -7,9 +7,13 @@ import { useStore } from "../store/store";
 export default function Tables() {
     const tables = [
         { number: 1, icon: PoolTable, status: "" },
-        { number: 2, icon: PoolTable, status: "booked" },
-        { number: 3, icon: PoolTable, status: "booked" },
+        { number: 2, icon: PoolTable, status: "reserved" },
+        { number: 3, icon: PoolTable, status: "" },
         { number: 4, icon: PoolTable, status: "" },
+        { number: 5, icon: PoolTable, status: "booked" },
+        { number: 6, icon: PoolTable, status: "booked" },
+        { number: 7, icon: PoolTable, status: "" },
+        { number: 8, icon: PoolTable, status: "" },
     ];
 
     const [selectedTable, setSelectedTable] = useState(null);
@@ -43,21 +47,23 @@ export default function Tables() {
                         </div>
 
                         <div className={css.tableInfo}>
-                            {table.status === "" ? (
-                                <label className={css.radioLabel}>
-                                    <input
-                                        type="radio"
-                                        name="table"
-                                        value={table.number}
-                                        onChange={handleChange}
-                                        checked={cartTables === String(table.number)}
-                                    />
-                                    Select Table {table.number}
-                                </label>
-                            ) : (
-                                <span className={css.bookedText}>Booked</span>
-                            )}
-                        </div>
+  {table.status === "" ? (
+    <label className={css.radioLabel}>
+      <input
+        type="radio"
+        name="table"
+        value={table.number}
+        onChange={handleChange}
+        checked={cartTables === String(table.number)}
+      />
+      Select Table {table.number}
+    </label>
+  ) : table.status === "booked" ? (
+    <span className={css.bookedText}>Booked</span>
+  ) : table.status === "reserved" ? (
+    <span className={css.reservedText}>Reserved</span>
+  ) : null}
+</div>
                     </div>
                 ))}
             </div>

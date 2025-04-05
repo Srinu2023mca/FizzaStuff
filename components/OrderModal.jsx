@@ -7,7 +7,9 @@ import { useStore } from "../store/store";
 import { useRouter } from "next/router";
 
 export default function OrderModal({opened, setOpened,PaymentMethod}) {
-    
+    const CartData = useStore((state) => state.cart);
+    const selectedTable = CartData?.tables;
+
     const theme = useMantineTheme();
     const router = useRouter();
     const total = typeof window !== 'undefined' && localStorage.getItem('total')
@@ -42,8 +44,8 @@ export default function OrderModal({opened, setOpened,PaymentMethod}) {
             <input type="text" name="name" required placeholder="Enter Your Name" onChange={handleInput}/>
             <input type="text" name="phone" required placeholder="Enter Your Phone Number" onChange={handleInput}/>
             {/* <input type="text" name="tableNo"  onChange={handleInput} className={css.address}/> */}
-            <textarea name="tableNo" id="" rows="3" placeholder="Enter your Address or Table No" onChange={handleInput}></textarea> 
-            <span>You will pay<span>₹ {total} </span>on Delivery</span>
+            <textarea name="tableNo" id="" rows="3" placeholder="Enter your Address or Table No" onChange={handleInput} value={selectedTable?`Table ${selectedTable}`:""}></textarea> 
+            <span>You will pay <span>₹{total} </span>on Delivery</span>
             <button type="submit" className="btn">Place Order</button>
         </form>
         <Toaster/>
