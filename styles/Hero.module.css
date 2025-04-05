@@ -45,7 +45,7 @@
 
 }
 .imageContainer{
-  width: 38rem; 
+  width: 35rem; 
   position: absolute; 
   top: -5rem;
   left:-5rem;
@@ -115,4 +115,399 @@
 .pizza:hover{
     transform:scale(1.1) ;
     cursor: pointer;
+}
+@media screen and (max-width:320px){
+    .container{
+        display: flex;
+        position: relative;
+        padding-left: 0.5rem;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    
+    }
+    .cherryDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        background-color: var(--pink);
+        /* border: 2px solid black; */
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-style:0.8rem;
+        font-size: 0.7rem;
+        color: var(--themeRed);
+        font-weight: bold;
+    }
+    
+    .heroText{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .miniText{
+        width: 100%;
+        color: var(--gray);
+        font-weight: 600;
+    }
+    
+    .btn{
+        padding: 2px 5px;
+    }
+    .right{
+        display: none;
+    
+    }
+    .imageContainer{
+      width: 7rem; 
+      position: absolute; 
+      top: 0.1rem;
+      left:-5.2rem;
+      
+    }
+    
+    
+    .pizza{
+        display:none;
+    }
+}
+
+@media screen  and (min-width:321px) and (max-width:426px){
+    .container{
+        display: flex;
+        position: relative;
+        padding-left: 0.5rem;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+    
+    }
+    .cherryDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        background-color: var(--pink);
+        /* border: 2px solid black; */
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-style:0.8rem;
+        font-size: 0.7rem;
+        color: var(--themeRed);
+        font-weight: bold;
+    }
+    
+    .heroText{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .miniText{
+        width: 100%;
+        color: var(--gray);
+        font-weight: 600;
+    }
+    
+    .btn{
+        padding: 2px 5px;
+    }
+    .right{
+        display: none;
+
+    
+    }
+    .imageContainer{
+      width: 10rem; 
+      position: absolute; 
+      top:1rem;
+      left:-7.7rem;
+      
+    }
+    
+    .contactUs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width:120px;
+        height: 25px;
+        padding: 1rem;
+        border-radius: 5rem;
+        top: 11rem;
+        left: -5.2rem;
+        font-size:10px;
+        background-color: white;
+        box-shadow: var(--shadow);
+        color: var(--themeRed);
+    }
+    
+    .contactUs>div{
+        display:none;
+    }
+    
+    .contactUs:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    .pizza{
+        display:none;
+    }
+}
+
+@media screen  and (min-width:427px) and (max-width:768px){
+    .container{
+        display: flex;
+        position: relative;
+        padding-left: 1rem;
+    }
+    
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    
+    }
+    .cherryDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        background-color: var(--pink);
+        /* border: 2px solid black; */
+        margin-top: 3rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        font-style:0.7rem;
+        color: var(--themeRed);
+        font-weight: bold;
+    }
+    
+    .heroText{
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .miniText{
+        width: 70%;
+        color: var(--gray);
+        font-weight: 600;
+    }
+    
+    .btn{
+        padding: 1rem 3rem;
+    }
+    .right{
+        display: none;
+
+    
+    }
+    .imageContainer{
+      width: 23rem; 
+      position: absolute; 
+      top: -2rem;
+      left:-20rem;
+      
+    }
+    
+    .contactUs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width:140px;
+        padding: 0.5rem;
+        border-radius: 5rem;
+        top: 6rem;
+        left: -20rem;
+        /* gap: 1rem; */
+        background-color: white;
+        box-shadow: var(--shadow);
+        color: var(--themeRed);
+        font-size: 12px;
+    }
+    
+    .contactUs>div{
+        background-color:green ;
+        border-radius: 50%;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
+    }
+    
+    .contactUs:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    .pizza{
+        display: flex;
+        gap: 1rem;
+        background-color: white;
+        box-shadow: var(--shadow);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        position: absolute;
+        bottom: 9rem;
+        left: -13rem;
+        width: max-content;
+    
+    
+    }
+    
+    .pizza>:nth-child(1){
+        width: 5rem;
+        height: 3.5rem;
+        overflow: hidden;
+        border-radius: .5rem;
+    
+    }
+    .pizza>:nth-child(2){
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       font-weight: bold;
+    
+    }
+    
+    .pizza:hover{
+        transform:scale(1.1) ;
+        cursor: pointer;
+    }
+
+}
+
+@media screen  and (min-width:769px) and (max-width:1024px){
+
+    .container{
+        display: flex;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+    
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    
+    }
+    .cherryDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        background-color: var(--pink);
+        /* border: 2px solid black; */
+        margin-top: 3rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        font-style:0.8rem;
+        color: var(--themeRed);
+        font-weight: bold;
+    }
+    
+    .heroText{
+        display: flex;
+        flex-direction: column;
+        font-size: 3.2rem;
+        font-weight: bold;
+    }
+    .miniText{
+        width: 70%;
+        color: var(--gray);
+        font-weight: 600;
+    }
+    
+    .btn{
+        padding: 1rem 3rem;
+    }
+    .right{
+        position: relative;
+    
+    }
+    .imageContainer{
+      width: 35rem; 
+      position: absolute; 
+      top: -5rem;
+      left:-20rem;
+      
+    }
+    
+    .contactUs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: max-content;
+        padding: 0.5rem;
+        border-radius: 5rem;
+        top: 6rem;
+        left: -16rem;
+        gap: 1rem;
+        background-color: white;
+        box-shadow: var(--shadow);
+        color: var(--themeRed);
+    }
+    
+    .contactUs>div{
+        background-color:green ;
+        border-radius: 50%;
+        width: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+    }
+    
+    .contactUs:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    .pizza{
+        display: flex;
+        gap: 1rem;
+        background-color: white;
+        box-shadow: var(--shadow);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        position: absolute;
+        bottom: 4rem;
+        left: -1rem;
+        width: max-content;
+    
+    
+    }
+    
+    .pizza>:nth-child(1){
+        width: 6rem;
+        height: 4rem;
+        overflow: hidden;
+        border-radius: .5rem;
+    
+    }
+    .pizza>:nth-child(2){
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       font-weight: bold;
+    
+    }
+    
+    .pizza:hover{
+        transform:scale(1.1) ;
+        cursor: pointer;
+    } 
 }

@@ -3,3 +3,21 @@
     
 
 }
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 1rem; /* Reduce padding for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0.8rem; /* More compact padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0.5rem; /* Minimal padding for mobile screens */
+    }
+}

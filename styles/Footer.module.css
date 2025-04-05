@@ -5,7 +5,6 @@
     margin-top: 6rem;
     align-items: center;
     justify-content: center;
-    background:linear-gradient(1deg, rgba(166, 234, 237, 0.85) 0%, rgba(43, 212, 212, 0) 14rem); ;
 }
 .container>span{
     color: var(--themeRed);
@@ -38,8 +37,8 @@
 
 
 }
-.social>*{
-    fill: var(--themeRed);
+.social>a{
+    color: var(--themeRed);
 }
 .card{
     display: flex;
@@ -49,4 +48,89 @@
     width: 45%;
     color: var(--themeRed);
     padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        gap: 2rem;
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+
+    .box {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .logo {
+        gap: 0.3rem;
+    }
+
+    .logo > span {
+        font-size: 1.3rem;
+    }
+
+    .social {
+        width: 100%;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .card {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        padding: 0.8rem;
+    }
+
+    .box {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .logo > span {
+        font-size: 1.2rem;
+    }
+
+    .social {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        gap: 1rem;
+        margin-top: 2rem;
+        padding: 0.5rem;
+    }
+
+    .logo > span {
+        font-size: 1rem;
+    }
+
+    .social {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 0.5rem;
+    }
 }

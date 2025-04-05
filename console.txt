@@ -2,4 +2,4 @@ open sanity in chrome:
 https://fizzastuff.sanity.studio/  
 
 app deployment
-fizzastuffselforder-rk657grs6-vemulasrinuiso-gmailcom.vercel.app
+https://fizza-stuff.vercel.app/
